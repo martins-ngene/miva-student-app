@@ -1,0 +1,411 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+
+  background: #f8fafc;
+
+  color: #1e293b;
+}
+
+img {
+  width: 100%;
+
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Navigation */
+
+header {
+  padding: 20px 8%;
+
+  position: sticky;
+
+  top: 0;
+
+  background: white;
+
+  z-index: 999;
+
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.navbar {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+
+  gap: 35px;
+}
+
+.nav-links a {
+  color: #1e293b;
+
+  font-weight: 500;
+
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #3b82f6;
+}
+
+.menu-btn {
+  display: none;
+
+  font-size: 28px;
+
+  cursor: pointer;
+}
+
+/* Hero */
+
+.hero {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 80px 8%;
+
+  gap: 60px;
+}
+
+.hero-text {
+  animation: slideLeft 1s;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+
+  margin-bottom: 20px;
+}
+
+.hero-text span {
+  color: #3b82f6;
+}
+
+.hero-text h2 {
+  margin-bottom: 20px;
+
+  font-weight: 500;
+}
+
+.hero-text p {
+  line-height: 1.8;
+
+  margin-bottom: 30px;
+}
+
+.hero-buttons {
+  display: flex;
+
+  gap: 15px;
+}
+
+.btn {
+  padding: 15px 35px;
+
+  border-radius: 8px;
+
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.primary {
+  background: #3b82f6;
+
+  color: white;
+}
+
+.primary:hover {
+  transform: translateY(-5px);
+}
+
+.secondary {
+  border: 2px solid #3b82f6;
+
+  color: #3b82f6;
+}
+
+.secondary:hover {
+  background: #3b82f6;
+
+  color: white;
+}
+
+.hero-image {
+  animation: float 4s infinite ease-in-out;
+}
+
+.hero-image img {
+  width: 350px;
+
+  border-radius: 50%;
+
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+/* Sections */
+
+section {
+  padding: 70px 8%;
+}
+
+.recent-posts {
+  background: #eef7fb;
+}
+
+.section-header {
+  display: flex;
+
+  justify-content: space-between;
+
+  margin-bottom: 30px;
+}
+
+.posts-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 30px;
+}
+
+.card {
+  background: white;
+
+  padding: 30px;
+
+  border-radius: 10px;
+
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.project {
+  display: grid;
+
+  grid-template-columns: 250px 1fr;
+
+  gap: 30px;
+
+  margin: 40px 0;
+
+  align-items: center;
+}
+
+.project img {
+  border-radius: 10px;
+}
+
+.badge {
+  display: inline-block;
+
+  background: #3b82f6;
+
+  color: white;
+
+  padding: 6px 15px;
+
+  border-radius: 50px;
+
+  margin: 15px 0;
+}
+
+.video-container {
+  overflow: hidden;
+
+  border-radius: 15px;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+footer {
+  padding: 50px;
+
+  text-align: center;
+}
+
+.socials {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 25px;
+
+  font-size: 28px;
+
+  margin-bottom: 20px;
+}
+
+.socials a {
+  color: #1e293b;
+
+  transition: 0.3s;
+}
+
+.socials a:hover {
+  transform: scale(1.2);
+
+  color: #3b82f6;
+}
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+
+    transform: translateX(-60px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateX(0);
+  }
+}
+
+@keyframes float {
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .menu-btn {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+
+    top: 80px;
+
+    left: -100%;
+
+    background: white;
+
+    width: 100%;
+
+    flex-direction: column;
+
+    padding: 40px;
+
+    transition: 0.4s;
+  }
+
+  .show {
+    left: 0;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+
+    text-align: center;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .posts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-image img {
+    width: 260px;
+  }
+
+  .hero-text h1 {
+    font-size: 2.6rem;
+  }
+}
+
+.intro-video {
+  padding: 80px 8%;
+
+  background: #f8fafc;
+
+  text-align: center;
+}
+
+.intro-video h2 {
+  margin-bottom: 15px;
+
+  font-size: 2.3rem;
+}
+
+.intro-video p {
+  max-width: 500px;
+
+  margin: 0 auto 40px;
+
+  color: #64748b;
+}
+
+.video-container {
+  position: relative;
+
+  width: 100%;
+
+  max-width: 500px;
+
+  margin: auto;
+
+  padding-bottom: 56.25%;
+
+  height: 0;
+
+  overflow: hidden;
+
+  border-radius: 18px;
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.video-container iframe {
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+  border: none;
+}

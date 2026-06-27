@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MIVA Student Portfolio</title>
+
+    <link rel="stylesheet" href="app.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <h2>MyPortfolio</h2>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+
+          <li><a href="pages/about-me.html">About</a></li>
+
+          <li><a href="pages/projects-page.html">Projects</a></li>
+
+          <li><a href="pages/academic-planner.html">Planner</a></li>
+
+          <li><a href="pages/contact.html">Contact</a></li>
+        </ul>
+
+        <div class="menu-btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Hi, I'm <span>Sopulu Ngene</span></h1>
+
+        <h2>Computer Science Student & Frontend Developer</h2>
+
+        <p>
+          Passionate about creating modern websites, solving real-world problems
+          using technology and continuously learning new web development skills.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#" class="btn primary">Download CV</a>
+
+          <a href="pages/about-me.html" class="btn secondary"> Learn More </a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="pages/assets/profile.jpeg" alt="Profile" />
+      </div>
+    </section>
+
+    <!-- Recent Posts -->
+
+    <section class="recent-posts">
+      <div class="section-header">
+        <h2>Recent Posts</h2>
+
+        <a href="#">View All</a>
+      </div>
+
+      <div class="posts-grid">
+        <div class="card">
+          <h3>Building My Student Portfolio</h3>
+
+          <p class="date">June 2026 | HTML & CSS</p>
+
+          <p>
+            Documenting my journey of building a responsive student portfolio
+            for my Web Technologies course.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Learning JavaScript DOM</h3>
+
+          <p class="date">June 2026 | JavaScript</p>
+
+          <p>
+            Understanding DOM manipulation, events and creating dynamic web
+            applications.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects -->
+
+    <section class="featured">
+      <h2>Featured Projects</h2>
+
+      <div class="project">
+        <img src="pages/assets/images/project1.jpg" />
+
+        <div>
+          <h3>Academic Planner</h3>
+
+          <span class="badge">2026</span>
+
+          <p>
+            A JavaScript task manager allowing students to organize assignments
+            and deadlines.
+          </p>
+        </div>
+      </div>
+
+      <div class="project">
+        <img src="pages/assets/images/project2.jpg" />
+
+        <div>
+          <h3>Student Portfolio Website</h3>
+
+          <span class="badge">2026</span>
+
+          <p>A responsive portfolio built with HTML, CSS and JavaScript.</p>
+        </div>
+      </div>
+
+      <div class="project">
+        <img src="pages/assets/images/project3.jpg" />
+
+        <div>
+          <h3>Weather Dashboard</h3>
+
+          <span class="badge">2025</span>
+
+          <p>Weather application consuming an external API.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Video -->
+
+    <section class="video-section">
+      <h2>Meet Me</h2>
+
+      <section class="intro-video">
+        <div class="container">
+          <h2>Watch My Introduction</h2>
+
+          <p>
+            Learn more about my journey, interests, and passion for technology.
+          </p>
+
+          <div class="video-container">
+            <iframe
+              src="https://www.youtube.com/embed/-e8Gha-F-RM"
+              title="Introduction Video"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <footer>
+      <div class="socials">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+
+        <a href="#"><i class="fab fa-instagram"></i></a>
+
+        <a href="#"><i class="fab fa-twitter"></i></a>
+
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+
+        <a href="#"><i class="fab fa-github"></i></a>
+      </div>
+
+      <p>© 2026 Sopulu Ngene. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+      const menu = document.querySelector(".menu-btn");
+      const nav = document.querySelector(".nav-links");
+
+      menu.onclick = () => {
+        nav.classList.toggle("show");
+      };
+    </script>
+  </body>
+</html>

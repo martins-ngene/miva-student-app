@@ -1,0 +1,442 @@
+/* ===========================
+   ACADEMIC PLANNER STYLES
+=========================== */
+
+/* Hero */
+
+.planner-hero {
+  padding: 90px 8%;
+  text-align: center;
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: #fff;
+}
+
+.planner-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.planner-hero p {
+  max-width: 650px;
+  margin: auto;
+  line-height: 1.8;
+}
+
+/* Dashboard */
+
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  padding: 60px 8%;
+}
+
+.stat-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 35px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+  animation: fadeUp 0.6s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-8px);
+}
+
+.stat-card i {
+  font-size: 2rem;
+  color: #3b82f6;
+  margin-bottom: 15px;
+}
+
+.stat-card h2 {
+  font-size: 2.2rem;
+  margin-bottom: 8px;
+}
+
+/* Progress */
+
+.progress-section {
+  width: min(900px, 90%);
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.progress-bar {
+  height: 15px;
+  background: #dbeafe;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+#progressFill {
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(90deg, #2563eb, #60a5fa);
+  transition: 0.5s;
+}
+
+/* Search */
+
+.search-section {
+  width: min(900px, 90%);
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.search-box i {
+  color: #64748b;
+  margin-right: 15px;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 1rem;
+}
+
+/* Filters */
+
+.filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 0 8% 50px;
+}
+
+.filter-btn {
+  border: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  background: #e2e8f0;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: #2563eb;
+  color: #fff;
+}
+
+/* Planner Layout */
+
+.planner-container {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 40px;
+  padding: 0 8% 80px;
+}
+
+/* Form */
+
+.planner-form {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 110px;
+  height: fit-content;
+}
+
+.planner-form h2 {
+  margin-bottom: 25px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.input-group input,
+.input-group select {
+  padding: 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+  border-color: #2563eb;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.btn.primary {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* Task List */
+
+.planner-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+#taskList {
+  display: grid;
+  gap: 20px;
+}
+
+/* Task Card */
+
+.task-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  animation: popIn 0.4s ease;
+  transition: 0.3s;
+}
+
+.task-card:hover {
+  transform: translateY(-5px);
+}
+
+.task-info {
+  flex: 1;
+}
+
+.task-info h3 {
+  margin-bottom: 10px;
+}
+
+.task-info p {
+  color: #64748b;
+  margin-bottom: 6px;
+}
+
+/* Priority Badges */
+
+.priority {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 6px 16px;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.high {
+  background: #ef4444;
+}
+
+.medium {
+  background: #f59e0b;
+}
+
+.low {
+  background: #10b981;
+}
+
+/* Completed */
+
+.completed {
+  opacity: 0.65;
+}
+
+.completed h3 {
+  text-decoration: line-through;
+}
+
+/* Buttons */
+
+.task-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.task-actions button {
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.edit-btn {
+  background: #3b82f6;
+}
+
+.complete-btn {
+  background: #10b981;
+}
+
+.delete-btn {
+  background: #ef4444;
+}
+
+.task-actions button:hover {
+  opacity: 0.85;
+}
+
+/* Empty State */
+
+#emptyState {
+  text-align: center;
+  padding: 80px 20px;
+  color: #94a3b8;
+}
+
+#emptyState i {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+#emptyState h3 {
+  margin-bottom: 10px;
+}
+
+/* Footer */
+
+footer {
+  background: #0f172a;
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+footer .socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+footer .socials a {
+  color: #fff;
+  font-size: 1.3rem;
+  transition: 0.3s;
+}
+
+footer .socials a:hover {
+  color: #60a5fa;
+}
+
+/* Animations */
+
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+
+@media (max-width: 992px) {
+  .planner-container {
+    grid-template-columns: 1fr;
+  }
+
+  .planner-form {
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .planner-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .task-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .task-actions {
+    width: 100%;
+  }
+
+  .task-actions button {
+    flex: 1;
+  }
+
+  .row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+
+  .filters {
+    justify-content: flex-start;
+  }
+
+  .filter-btn {
+    flex: 1;
+  }
+
+  .list-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
