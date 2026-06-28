@@ -4,6 +4,7 @@ A modern, fully responsive student portfolio website developed as a COS106 Web D
 
 The project demonstrates proficiency in HTML5, CSS3, and JavaScript by building a complete multi-page website featuring responsive layouts, animations, JavaScript interactivity, Local Storage, CRUD operations, DOM manipulation, and client-side form validation.
 Project Link: [miva-student-app.netlify.app/](https://miva-student-app.netlify.app/)
+
 ---
 
 # 📖 Table of Contents
@@ -346,17 +347,17 @@ This project demonstrates understanding of:
 
 # 👨‍💻 Author
 
-**Sopulu Ngene**
+**Martins Ngene**
 
 MIVA Open University
 
 COS106 Web Development Lab Assessment
 
 GitHub:
-https://github.com/yourusername
+[github.com/martins-ngene](https://github.com/martins-ngene)
 
 LinkedIn:
-https://linkedin.com/in/yourprofile
+[www.linkedin.com/in/martins-ngene](https://www.linkedin.com/in/martins-ngene/)
 
 ---
 
@@ -367,11 +368,3 @@ This project is licensed under the MIT License.
 See the LICENSE file for details.
 
 ---
-
-# 🙏 Acknowledgements
-
-- MIVA Open University
-- Font Awesome
-- Google Fonts
-- Google Maps
-- YouTube Embed
